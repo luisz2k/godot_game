@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://csl7n2miadiuy"]
+
+[ext_resource type="Texture2D" uid="uid://b1k42p8ndimfx" path="res://Art/4-direction-male-character-pixel-art/PNG/Sword_Walk/Sword_Walk_full.png" id="1_xhfnw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hwbb7"]
+size = Vector2(11, 9)
+
+[node name="Player" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_xhfnw")
+hframes = 6
+vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 7.5)
+shape = SubResource("RectangleShape2D_hwbb7")
