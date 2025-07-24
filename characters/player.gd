@@ -14,10 +14,10 @@ func _physics_process(delta):
 func player_animate(move_input):
 	# Walking and setting idle direction
 	if move_input.y < 0:
-		$AnimationPlayer.play("walk_up")
+		$AnimationPlayer.play("idle_up")
 	elif move_input.y > 0:
-		$AnimationPlayer.play("walk_down")
+		$AnimationPlayer.play("idle_down")
 	elif move_input.x < 0:
-		$AnimationPlayer.play("walk_left")
+		$AnimationPlayer.play("idle_left")
 	elif move_input.x > 0:
-		$AnimationPlayer.play("walk_right")
+		$AnimationPlayer.play("idle_right")
